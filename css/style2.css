@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background: white;
+  width: 100%;
+}
+
+.section:nth-of-type(odd){
+  background: #acb643;
+  color: #282563;
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+  margin: -110px 0;
+}
+
+.section:nth-of-type(even){
+  background: #007481;
+  color: white;
+  -webkit-clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+}
+
+.section:first-of-type{
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+
+.section:last-of-type{
+  -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+img {
+  height: 100vh;
+}
+
+p {
+  font-size: 25px;
+  width: 45%;
+}
